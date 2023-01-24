@@ -166,6 +166,7 @@ android {
                 }
             }
         }
+        manifestPlaceholders = [partner: 'vitableuat']
     }
 
     if (isNewArchitectureEnabled()) {

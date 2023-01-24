@@ -12,3 +12,20 @@
 -keep class com.facebook.react.turbomodule.** { *; }
 
 # Add any project specific keep options here:
+#Insider
+-keep class com.useinsider.insider.Insider { *; }
+
+-keep interface com.useinsider.insider.InsiderCallback { *; }
+-keep class com.useinsider.insider.InsiderUser { *; }
+-keep class com.useinsider.insider.InsiderProduct { *; }
+-keep class com.useinsider.insider.InsiderEvent { *; }
+-keep class com.useinsider.insider.InsiderCallbackType { *; }
+-keep class com.useinsider.insider.InsiderGender { *; }
+-keep class com.useinsider.insider.InsiderIdentifiers { *; }
+
+-keep interface com.useinsider.insider.RecommendationEngine$SmartRecommendation { *; }
+-keep interface com.useinsider.insider.MessageCenterData { *; }
+-keep class com.useinsider.insider.Geofence { *; }
+-keep class com.useinsider.insider.ContentOptimizerDataType { *; }
+-keep class org.openudid.** { *; }
+-keep class com.useinsider.insider.OpenUDID_manager { *; }

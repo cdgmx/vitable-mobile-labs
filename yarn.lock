@@ -5317,6 +5317,11 @@ react-native-gradle-plugin@^0.70.3:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz#cbcf0619cbfbddaa9128701aa2d7b4145f9c4fc8"
   integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
 
+react-native-insider@^5.5.0-nh:
+  version "5.5.0-nh"
+  resolved "https://registry.yarnpkg.com/react-native-insider/-/react-native-insider-5.5.0-nh.tgz#034676a2c57c5e11805a1e2b01ddd69f82ea403c"
+  integrity sha512-deEsWhSTVEoAC3rk5EgEePePqDMHU3CuYtHKsyHd4QgEKa4lYFngsxMuD2U/42/ufLBYG5MfAMOxkTHReYJI1w==
+
 react-native@0.70.5:
   version "0.70.5"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.70.5.tgz#f60540b21d338891086e0a834e331c124dd1f55c"
