@@ -4,7 +4,7 @@ require File.join(File.dirname(`node --print "require.resolve('@react-native-com
 
 require 'json'
 podfile_properties = JSON.parse(File.read(File.join(__dir__, 'Podfile.properties.json'))) rescue {}
-
+use_frameworks!
 platform :ios, podfile_properties['ios.deploymentTarget'] || '13.0'
 install! 'cocoapods',
   :deterministic_uuids => false
@@ -14,7 +14,9 @@ target 'vitablemobilelabs' do
   config = use_native_modules!
 
   use_frameworks! :linkage => podfile_properties['ios.useFrameworks'].to_sym if podfile_properties['ios.useFrameworks']
-
+  inherit! :search_paths
+  # Pods for InsiderDemo
+  pod 'InsiderMobile'
   # Flags change depending on the env values.
   flags = get_default_flags()
 
@@ -58,4 +60,15 @@ target 'vitablemobilelabs' do
       Pod::UI.warn e
     end
   end
+end
+
+target 'InsiderNotificationContent' do
+inherit! :search_paths
+# Pods for InsiderNotificationContent
+pod "InsiderMobileAdvancedNotification"
+end
+target 'InsiderNotificationService' do
+inherit! :search_paths
+# Pods for InsiderNotificationService
+pod "InsiderMobileAdvancedNotification"
 end
