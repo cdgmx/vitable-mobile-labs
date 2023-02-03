@@ -1,14 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Alert } from 'react-native';
 import RNInsider from 'react-native-insider';
 
 export default function App() {
-
   useEffect(() => {
     RNInsider.init(
-      'your_partner_name',
-      'group.com.useinsider.InsiderDemo',
+      'vitableuat',
+      'group.insider.mobilesdk.vitablemobilelabs',
       (type, data) => {
         switch (type) {
           case InsiderCallbackType.NOTIFICATION_OPEN:
@@ -48,12 +47,10 @@ export default function App() {
     );
 
     RNInsider.registerWithQuietPermission(false);
-
   }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>testtt</Text>
       <StatusBar style="auto" />
     </View>
   );
